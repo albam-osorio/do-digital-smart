@@ -13,12 +13,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import co.com.dodigital.smart.sensores.constants.RestConstantsV1;
 import co.com.dodigital.smart.sensores.dto.external.OcupacionDto;
 import co.com.dodigital.smart.sensores.service.api.crud.MedicionOcupacionCrudService;
 import lombok.val;
 
 @RestController
-@RequestMapping(value = "/api/v1/sensores/ocupaciones", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value = RestConstantsV1.ocupaciones, produces = MediaType.APPLICATION_JSON_VALUE)
 public class OcupacionRestController {
 
 	@Autowired
