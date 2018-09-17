@@ -41,7 +41,7 @@ public class PuestoCrudServiceImpl extends CrudServiceImpl<Puesto, PuestoDto, Lo
 	}
 
 	@Override
-	protected Puesto asEntity(PuestoDto model, Puesto entity) {
+	protected Puesto mergeEntity(PuestoDto model, Puesto entity) {
 
 		entity.setIdZona(model.getIdZona());
 		entity.setCodigo(model.getCodigo());

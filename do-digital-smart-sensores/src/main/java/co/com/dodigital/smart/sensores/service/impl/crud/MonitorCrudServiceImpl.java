@@ -40,7 +40,7 @@ public class MonitorCrudServiceImpl extends CrudServiceImpl<Monitor, MonitorDto,
 	}
 
 	@Override
-	protected Monitor asEntity(MonitorDto model, Monitor entity) {
+	protected Monitor mergeEntity(MonitorDto model, Monitor entity) {
 
 		entity.setCodigo(model.getCodigo());
 		

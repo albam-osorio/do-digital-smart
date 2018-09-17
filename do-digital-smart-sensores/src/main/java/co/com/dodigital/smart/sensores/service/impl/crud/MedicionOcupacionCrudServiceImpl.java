@@ -60,7 +60,7 @@ public class MedicionOcupacionCrudServiceImpl extends CrudServiceImpl<MedicionOc
 	}
 
 	@Override
-	protected MedicionOcupacion asEntity(MedicionOcupacionDto model, MedicionOcupacion entity) {
+	protected MedicionOcupacion mergeEntity(MedicionOcupacionDto model, MedicionOcupacion entity) {
 
 		entity.setIdSensor(model.getIdSensor());
 		entity.setIdPuesto(model.getIdPuesto());

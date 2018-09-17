@@ -43,7 +43,7 @@ public class SensorCrudServiceImpl extends CrudServiceImpl<Sensor, SensorDto, Lo
 	}
 
 	@Override
-	protected Sensor asEntity(SensorDto model, Sensor entity) {
+	protected Sensor mergeEntity(SensorDto model, Sensor entity) {
 
 		entity.setIdMonitor(model.getIdMonitor());
 		entity.setCodigo(model.getCodigo());
